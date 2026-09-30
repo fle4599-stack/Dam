@@ -1,0 +1,6 @@
+{
+  "name": "Dam Architect: 16-Bit Logic Puzzle",
+  "description": "A 16-bit Sega Genesis style isometric hydraulic logic puzzle game where players build dams and sluice gates to create reservoirs and protect downstream villages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
