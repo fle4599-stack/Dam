@@ -115,9 +115,16 @@ export class Grid {
     tile.building = building;
     if (building === 'DAM') {
       tile.waterLevel = 0; // Solid concrete displaces standing water
+      // If there was a tree, rock, or flowers, remove it permanently from the tile
+      if (tile.decor && tile.decor !== 'church' && tile.decor !== 'house_1' && tile.decor !== 'house_2') {
+        tile.decor = null;
+      }
     } else if (building === 'GATE') {
       tile.gateOpen = false; // Closed by default
       tile.waterLevel = 0;
+      if (tile.decor && tile.decor !== 'church' && tile.decor !== 'house_1' && tile.decor !== 'house_2') {
+        tile.decor = null;
+      }
     }
     return true;
   }

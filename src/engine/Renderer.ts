@@ -206,7 +206,7 @@ export class Renderer {
       this.drawSourceSpring(tile, cx, cy, halfW, halfH);
     } else if (tile.isVillage) {
       this.drawVillageBuildings(tile, cx, cy, halfW, halfH);
-    } else if (tile.decor) {
+    } else if (tile.decor && tile.building === 'NONE') {
       this.drawDecor(tile, cx, cy);
     }
   }

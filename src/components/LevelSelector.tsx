@@ -49,7 +49,7 @@ export const LevelSelector: React.FC<LevelSelectorProps> = ({
                   <Waves className="w-3 h-3 text-sky-400 opacity-60" />
                 )}
                 <span>
-                  {level.id === 6 ? 'SANDBOX' : `STG ${level.id}`}
+                  {level.name.toLowerCase().includes('sandbox') ? 'SANDBOX' : `STG ${level.id}`}
                 </span>
                 {isActive && <ChevronRight className="w-3 h-3 text-sky-200 ml-0.5" />}
               </button>
